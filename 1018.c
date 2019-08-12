@@ -3,7 +3,7 @@
 int main(){
 	int N, Q;
 	scanf("%d", &N);
-	printf("%d", N);
+	printf("%d\n", N);
 	
 	Q = N / 100;
 	printf("%d nota(s) de R$ 100,00\n", Q);
