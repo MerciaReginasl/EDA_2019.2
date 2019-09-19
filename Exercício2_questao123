@@ -1,0 +1,15 @@
+#Questão 1: Qual a saída fornecida por esse programa?
+    Media de Pedro: 92.00
+    Media de ????: 90.00
+
+#Questão 2: O que ocorre na linha 25?
+    O ponteiro para as notas do a2 (estrutura do tipo aluno) recebe o endereço para as notas do a1, que
+    por sua vez já guarda as cinco notas com valor de 100. Dessa forma, o vetore criado dinâmicamente para
+    a1 não é copiado para dentro do espaço de memória do a2, somente referênciam para o mesmo vetor de 
+    inteiros.
+
+#Questão 3: O que ocorre nas linhas 43 e 44? Devido ao que foi feito anteriormente no código,isso
+pode gerar algum problema?
+    Ocorre uma tentativa de liberar o mesmo espaço de memória, pois na linha 25 copiamos o endereço de
+    a1.notas para a2.notas. Isso pode gerar um erro, pois já não existe mais nada alocado no espaço que
+    era referenciado por a1.notas após a linha 43.
